@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    /* width+height+padding+border */
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(210, 209, 209, 0.93);
+    color: #1864f3;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.courses {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar {
+    flex: 1;
+    margin-left: 20px;
+    max-width: 200px;
+    height: 75%;
+    background-color: #f7f8fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+#search {
+    height: 100%;
+    width: 75%;
+    border: none;
+    background-color: #f7f8fa;
+    font-size: 1rem;
+    color: #1864f3;
+    text-align: center;
+    padding-right: 5px;
+}
+
+#name {
+    text-decoration: none;
+    color: #0b2b66;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+}
+
+#name:hover {
+    color: #1864f3;
+}
+
+.logo-image {
+    height: 50%;
+    width: 20%;
+    max-width: 25px;
+    margin-right: 5px;
+    background-image: url('https://www.svgrepo.com/show/353965/khan-academy-icon.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-links {
+    display: flex;
+    width: 25%;
+    max-width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-links a {
+    text-decoration: none;
+    color: #1864f3;
+}
+
+.main-container {
+    display: flex;
+}
+
+.main-container div {
+    width: 50%;
+}
+
+.join {
+    background-color: #2d533d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 150px;
+}
+
+.image {
+    height: 350px;
+    width: 100% !important;
+    max-width: 400px;
+    min-width: 200px;
+    background-image: url('image.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+.join-text{
+    width: 55% !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#join-main-text {
+    font-family: "Source Serif 4", serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.2em;
+    width: 100%;
+    margin: 0;
+}
+
+#join-sub-text{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+#join-copy-text {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    width: 70%;
+}
+
+.underline {
+    color: white;
+}
+
+.login-method {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 150px;
+}
+
+.login-heading {
+    font-family: "Source Serif 4", serif;
+    font-weight: 500;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.accounts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100% !important;
+}
+
+.account:hover {
+    background-color: #eeeeee;
+}
+
+.account {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    width: 100% !important;
+    min-width: 250px;
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.acc-logo {
+    flex-shrink: 0;
+    height: 80%;
+    z-index: 1;
+}
+
+.account p {
+    flex: 1;
+    text-align: center;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100% !important;
+}
+
+.astrick {
+    color: tomato;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100% !important;
+}
+
+.label {
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 99%;
+    height: 2.1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#login-botton {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b8b8ba;
+    color: #e5e7e7;
+    font-size: 1rem;
+}
+
+#signup {
+    text-decoration: none;
+    color: #1864f3;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #0a2148;
+    color: white;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.mission-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    max-width: 900px;
+    margin-bottom: 10px;
+}
+
+.mission-text div {
+    margin-right: 25px;
+}
+
+#footer-main-text {
+    font-size: 1.1rem;
+    max-width: 400px;
+    color: #8295ba;
+    margin-right: 50px;
+}
+
+.footer-main-link {
+    color: white; 
+    text-decoration: none;
+}
+
+.footer-main-link:hover {
+    text-decoration: underline;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.list-class {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.list-items {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.list-items:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #8295ba;
+}
+
+.contact ul {
+    margin-bottom: 30px;
+}
+
+.appstore {
+    width: 100%;
+    height: 35px;
+    background-size: cover;
+    margin-bottom: 20px;
+    background-position: center;
+    border-radius: 5px;
+}
+
+#applestore {
+    background-image: url('https://apple-resources.s3.amazonaws.com/media-badges/download-on-the-app-store/black/en-us.svg');
+}
+
+#googleplay {
+    background-image: url('https://cdn.kastatic.org/images/store-badges/google-play/en.png');
+}
+
+.footer-courses {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-courses p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #8295ba;
+}
+
+#language, #country {
+    display: flex;
+    min-width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.origin p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.origin-text {
+    margin-right: 10px;
+    color: #8295ba;
+    font-weight: 600;
+}
+
+.medias {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.copy {
+    display: flex;
+    align-items: baseline;
+}
+
+.copy a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.copy a:hover {
+    text-decoration: underline;
+}
+
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+
+.socials a img{
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.socials a img:hover {
+    height: 45px;
+    width: 45px;
+    box-shadow: 2px 2px 3px rgb(184, 182, 182);
+}

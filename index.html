@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KhanAcademy Login Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- importing google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script>
+      function windowAlert() {
+        let email = document.getElementById("email-ID").value;
+        let password = document.getElementById("password").value;
+
+        if (
+          email === "aniketranjan75124@gmail.com" &&
+          password === "Password@75124"
+        ) {
+          window.location.href = 'index_form.html';
+        } else if (email === "" || password === "") {
+          alert("Fill the required columns");
+        } else {
+          alert("Invalid username or password.");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="courses">
+        <p>Courses</p>
+        <div class="search-bar">
+          <input type="text" name="bar" id="search" placeholder="Search" />
+          <span class="material-symbols-outlined" style="color: grey">
+            search
+          </span>
+        </div>
+      </div>
+      <div class="logo">
+        <div class="logo-image"></div>
+        <a href="https://www.khanacademy.org/" id="name" target="_blank">
+          Khan Academy
+        </a>
+      </div>
+      <div class="login-links">
+        <a
+          href="https://donate.khanacademy.org/give/419869/#!/donation/checkout?c_src2=Webapp.header"
+          target="_blank"
+          >Donate
+          <span class="material-symbols-outlined" style="font-size: 1rem">
+            open_in_new
+          </span>
+        </a>
+        <a href="#">Log in</a>
+        <a href="https://www.khanacademy.org/signup" target="_self">Sign up</a>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <div class="join">
+        <div class="image"></div>
+        <div class="join-text">
+          <p id="join-main-text">Join Khan Academy and learn with us</p>
+          <p id="join-sub-text">Log in to Khan Academy to get started!</p>
+          <p id="join-copy-text">
+            By logging in to Khan Academy, you agree to our
+            <a
+              href="https://www.khanacademy.org/about/tos"
+              target="_blank"
+              class="underline"
+              >Terms of use</a
+            >
+            and
+            <a
+              href="https://www.khanacademy.org/about/privacy-policy"
+              target="_blank"
+              class="underline"
+              >Policy</a
+            >.
+          </p>
+        </div>
+      </div>
+
+      <div class="login-method">
+        <div class="login-container">
+          <h1 class="login-heading">Log in</h1>
+          <div class="accounts">
+            <a
+              href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?gsiwebsdk=3&client_id=124072386181-eogtmmv0qose5ovudl946d83miv1ia89.apps.googleusercontent.com&scope=openid%20email%20profile&redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.khanacademy.org%3Fid%3Dauth247568&prompt=consent&access_type=offline&response_type=code&include_granted_scopes=true&enable_granular_consent=true&service=lso&o2v=2&ddm=0&flowName=GeneralOAuthFlow"
+              class="account"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRB4kg1jgnqD5fEaCSHKMoUdFeTBj9CH_opA&s"
+                alt="google"
+                class="acc-logo"
+              />
+              <p>Continue with Google</p>
+            </a>
+            <a
+              href="https://clever.com/oauth/district-picker?response_type=code&redirect_uri=https%3A%2F%2Fwww.khanacademy.org%2Flogin%2Fclever%2Fredirect&client_id=e50a9862bc4fdeafda80&state=%2F"
+              class="account"
+            >
+              <img
+                src="https://w1.pngwing.com/pngs/44/980/png-transparent-blue-circle-logo-ceridian-ceridian-canada-management-line-area-oval-thumbnail.png"
+                alt="clever"
+                class="acc-logo"
+                style="height: 60%; margin-left: 5px"
+              />
+              <p>Continue with Clever</p>
+            </a>
+            <a
+              href="https://www.facebook.com/login.php?skip_api_login=1&api_key=160249463991765&kid_directed_site=1&app_id=160249463991765&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv10.0%2Fdialog%2Foauth%3Fapp_id%3D160249463991765%26cbt%3D1719952989051%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df53c325be8941c68e%2526domain%253Dwww.khanacademy.org%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.khanacademy.org%25252Ffd442d7722f97f7d2%2526relation%253Dopener%26client_id%3D160249463991765%26display%3Dpopup%26domain%3Dwww.khanacademy.org%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.khanacademy.org%252Flogin%26kid_directed_site%3Dtrue%26locale%3Den_US%26logger_id%3Df0e52fca158aff52f%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Dffe47ac44ece2bb99%2526domain%253Dwww.khanacademy.org%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.khanacademy.org%25252Ffd442d7722f97f7d2%2526relation%253Dopener%2526frame%253Df9b15a7e8a53f75cd%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Demail%26sdk%3Djoey%26version%3Dv10.0%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dffe47ac44ece2bb99%26domain%3Dwww.khanacademy.org%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.khanacademy.org%252Ffd442d7722f97f7d2%26relation%3Dopener%26frame%3Df9b15a7e8a53f75cd%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=en_GB&pl_dbl=0"
+              class="account"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg"
+                alt="facebook"
+                class="acc-logo"
+                style="height: 50%; margin-left: 8px"
+              />
+              <p>Continue with Facebook</p>
+            </a>
+            <a
+              href="https://appleid.apple.com/auth/authorize?client_id=org.khanacademy.www&redirect_uri=https%3A%2F%2Fwww.khanacademy.org%2Flogin%2Fapple%2Fcomplete&response_type=code%20id_token&state=%7B%22token%22%3A%2281d50c0e42f53863c474c40117cd5320173f035c%22%2C%22action%22%3A%22LOGIN%22%2C%22continue%22%3A%22%2Fredirect%3Fcontinue%3D%252F%22%2C%22role%22%3A%22%22%2C%22signup_codes%22%3A%22%22%7D&scope=email%20name&response_mode=web_message&frame_id=a4e10d84-e8bf-4f47-99c4-81a77c1b38ca&m=11&v=1.4.2"
+              class="account"
+            >
+              <img
+                src="https://i.pinimg.com/736x/8d/f5/e7/8df5e76136dcba44841002494e01e050.jpg"
+                alt="apple"
+                class="acc-logo"
+              />
+              <p>Continue with Apple</p>
+            </a>
+          </div>
+          <p><span class="astrick">*</span> indicates a required field.</p>
+
+          <div class="email">
+            <label for="email-ID" class="label"
+              >Email or username <span class="astrick">*</span></label
+            >
+            <input type="text" name="email-ID" id="email-ID" class="input" />
+            <label for="password" class="label"
+              >Password <span class="astrick">*</span></label
+            >
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="input"
+              style="margin-bottom: 0"
+            />
+            <a
+              href="https://www.khanacademy.org/forgotpw"
+              style="
+                text-decoration: none;
+                margin: 0;
+                color: #1864f3;
+                margin-bottom: 20px;
+                font-weight: 600;
+                font-size: 0.9rem;
+              "
+              >Forgot password?</a
+            >
+            <button type="submit" id="login-botton" onclick="windowAlert()">
+              Log in
+            </button>
+          </div>
+
+          <p style="font-size: 0.9rem">
+            Need a Khan Academy account?
+            <a href="https://www.khanacademy.org/signup" id="signup"
+              >Create an account</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="mission-text">
+        <div id="footer-main-text">
+          <div>
+            Our mission is to provide a free, world-class education to anyone,
+            anywhere.
+          </div>
+          <br />
+          <div>
+            Khan Academy is a 501(c)(3) nonprofit organization.
+            <a
+              href="https://donate.khanacademy.org/give/419869/#!/donation/checkout?c_src2=Webapp.footer"
+              target="_blank"
+              class="footer-main-link"
+            >
+              Donate
+              <span class="material-symbols-outlined" style="font-size: 1rem">
+                open_in_new
+              </span>
+            </a>
+            or
+            <a
+              href="https://www.khanacademy.org/contribute"
+              class="footer-main-link"
+              >volunteer</a
+            >
+            today!
+          </div>
+        </div>
+        <div class="about">
+          <p>About</p>
+          <ul class="list-class">
+            <li class="list-items">News</li>
+            <li class="list-items">
+              Impact
+              <span class="material-symbols-outlined" style="font-size: 1rem">
+                open_in_new
+              </span>
+            </li>
+            <li class="list-items">Our team</li>
+            <li class="list-items">Our interns</li>
+            <li class="list-items">Our content specialists</li>
+            <li class="list-items">Our leadership</li>
+            <li class="list-items">Our supporters</li>
+            <li class="list-items">Our contributers</li>
+            <li class="list-items">Our finances</li>
+            <li class="list-items">Careers</li>
+            <li class="list-items">Internships</li>
+            <li class="list-items">Cookie Preferences</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <p>Contact</p>
+          <ul class="list-class">
+            <li class="list-items">Help center</li>
+            <li class="list-items">Support community</li>
+            <li class="list-items">Share your story</li>
+            <li class="list-items">Press</li>
+          </ul>
+
+          <p style="color: white">Download our apps</p>
+          <a
+            href="https://apps.apple.com/us/app/khan-academy/id469863705"
+            class="appstore"
+            id="applestore"
+          ></a>
+          <a
+            href="https://play.google.com/store/apps/details?id=org.khanacademy.android&referrer=utm_source%3Dwebsite%2520footer%26utm_medium%3Dwebsite%2520footer%26utm_campaign%3Dwebsite%2520footer&pli=1"
+            class="appstore"
+            id="googleplay"
+          ></a>
+        </div>
+        <div class="footer-courses">
+          <p>Courses</p>
+          <ul class="list-class">
+            <li class="list-items">Math(NCERT)</li>
+            <li class="list-items">Math foundations</li>
+            <li class="list-items">Math(Maharashtra)</li>
+            <li class="list-items">PACE(SOE Punjab)</li>
+            <li class="list-items">Science(NCERT)</li>
+            <li class="list-items">All State boards</li>
+            <li class="list-items">Explore more</li>
+            <li class="list-items">Khan for Educators</li>
+          </ul>
+        </div>
+        <section class="origin">
+          <div id="language">
+            <p class="origin-text">Language</p>
+            <p class="origin-ans">English</p>
+          </div>
+          <div id="country">
+            <p class="origin-text">Country</p>
+            <p class="origin-ans">U.S. India Mexico Brazil</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="medias">
+        <div class="copy">
+          <p style="margin-right: 10px; color: #8295ba">
+            &copf; 2024 Khan Academy
+          </p>
+          <a href="https://www.khanacademy.org/about/tos">Terms of use</a>
+          <a href="https://www.khanacademy.org/about/privacy-policy">Privacy</a>
+          <a href="https://www.khanacademy.org/about/cookie-policy"
+            >Cookie Notice</a
+          >
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/khanacademy">
+            <img
+              src="https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg"
+              alt="facebook"
+            />
+          </a>
+          <a href="https://x.com/khanacademy">
+            <img
+              src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png"
+              alt="twitter"
+            />
+          </a>
+          <a href="https://www.instagram.com/khanacademy/">
+            <img
+              src="https://www.logo.wine/a/logo/Instagram/Instagram-Glyph-Color-Logo.wine.svg"
+              alt="insta"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
